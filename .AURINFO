@@ -1,0 +1,6 @@
+pkgname = facette
+pkgver = 0.1.0
+pkgdesc = Facette is a software to display time series data from several various sources
+url = http://facette.io/
+license = BSD
+depends = rrdtool

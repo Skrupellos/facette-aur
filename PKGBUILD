@@ -9,8 +9,8 @@ arch=('i686' 'x86_64')
 url='http://facette.io/'
 license=('BSD')
 groups=()
-depends=('go' 'rrdtool')
-makedepends=('nodejs')
+depends=('rrdtool')
+makedepends=()
 checkdepends=()
 optdepends=()
 provides=('facette')
@@ -23,12 +23,14 @@ changelog=
 source=(
 	"https://github.com/facette/facette/releases/download/$pkgver/$pkgname-$pkgver-linux-amd64.tar.gz"
 	'facette.service'
-	'facette.install')
+	'facette.install'
+  '.AURINFO')
 noextract=()
 md5sums=(
 	'130a4c5471ce39219233d34e1d16bf7e'
 	'd1e55b27ca233bba20d320113bc1a906'
-	'ade342a98ade039939cf354580b12651')
+	'ade342a98ade039939cf354580b12651'
+  'SKIP')
 
 package() {
   cd "$srcdir/$pkgname-linux-amd64"
