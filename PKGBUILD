@@ -26,17 +26,16 @@ source=(
 	'facette.install'
   '.AURINFO')
 noextract=()
-md5sums=(
-	'd296ad384a90fbc36a3748177522df65'
-	'd1e55b27ca233bba20d320113bc1a906'
-	'ade342a98ade039939cf354580b12651'
-  'SKIP')
+md5sums=('d296ad384a90fbc36a3748177522df65'
+         '0a15a3822fc2ee56a39971528284c9c6'
+         'ade342a98ade039939cf354580b12651'
+         'SKIP')
 
 package() {
   cd "$srcdir/$pkgname-linux-amd64"
 
 	# create target directory structure
-	mkdir -p ${pkgdir}/{usr/bin,usr/share/facette,usr/share/facette/man,etc/facette,var/log/facette,var/run/facette}
+	mkdir -p ${pkgdir}/{usr/bin,usr/share/facette,usr/share/facette/man,etc/facette,var/log/facette}
 
 	# binaries
 	cp bin/{facette,facettectl} ${pkgdir}/usr/bin
