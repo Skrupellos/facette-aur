@@ -1,5 +1,5 @@
 pkgname = facette
-pkgver = 0.1.1
+pkgver = 0.2.0
 pkgdesc = Facette is a software to display time series data from several various sources
 url = http://facette.io/
 license = BSD
